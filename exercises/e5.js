@@ -13,8 +13,15 @@
 
 // Your code goes here...
 
+function getDiffTwentySeven(num) {
+  if (num < 27) {
+    return 27 - num;
+  } else {
+      return (num - 27)* 2;
+  }
+}
 
-
+console.log(getDiffTwentySeven());
 
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
@@ -24,9 +31,16 @@
  */
 
 // Your code goes here
+const sumOfTwoIntegers = (num1, num2) => {
+  if (num1 !== num2) {
+    return num1 + num2;
+  } else {
+      return (num1 + num2)* 3;
+  }
+}
 
-
-
+console.log(sumOfTwoIntegers(13, 14));
+console.log(sumOfTwoIntegers(12, 12));
 
 /** =========================
  * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
@@ -38,8 +52,20 @@
  */
 
 // Your code goes here...
+const isOneOfThemOrTheirSumIsFourty = function (num3, num4) {
+  const sum = num3 + num4;
+  if (num3 === 40 || num4 === 40) {
+    return true;
+  } else if (sum === 40) {
+      return true;
+  } else {
+    return false;
+  }
+}
 
-
+console.log(isOneOfThemOrTheirSumIsFourty(40, 13));
+console.log(isOneOfThemOrTheirSumIsFourty(22, 18));
+console.log(isOneOfThemOrTheirSumIsFourty(23, 16));
 
 
 // === TEST YOURSELF ===

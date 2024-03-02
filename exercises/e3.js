@@ -15,7 +15,17 @@
  */
 
 // Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let elem of arr) {
+    if (elem > val1 && elem < val2) {
+      return true;
+    }
+  }
+  return false;
+}
 
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5));
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10));
 
 
 
@@ -35,8 +45,39 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(a, b) {
+  if (a === 40 && b === 40) {
+    return a + b;
+  } else {
+     return (a + b)* 2;
+  }
+}
+
+console.log(getValueWithConditionOne(40,40));
+console.log(getValueWithConditionOne(40,50));
+
+const getValueWithConditionTwo = (c, d) => {
+  if (c === 40 && d === 40) {
+    return c + d;
+  } else {
+    return (c + d)* 2;
+  }
+}
+
+getValueWithConditionTwo(40, 40);
+getValueWithConditionTwo(20, 30);
 
 
+let getValueWithConditionThree = function (e, f) {
+  if (e === 40 && f === 40) {
+    return e + f;
+  } else {
+    return (e + f)* 2;
+  }
+}
+
+getValueWithConditionThree(40, 40);
+getValueWithConditionThree(10, 60);
 
 
 // === TEST YOURSELF ===
